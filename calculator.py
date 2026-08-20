@@ -10,12 +10,7 @@ def multiplication (a, b):
 
 
 def divition (a, b):
-    if b == 0:
-        print("We can not divide by 0 so now b = 1")
-        b = 1
-        return a / b
-    else:
-        return a / b
+    return a / b
 
 while True:
     try:
@@ -48,5 +43,8 @@ while True:
             
     except ValueError:
         print("Incorrect value. \n")
+    except ZeroDivisionError:
+        print("We can not divide by 0. Please try again \n")
+    
         
         
